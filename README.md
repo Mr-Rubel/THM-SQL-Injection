@@ -40,4 +40,8 @@
 ### Q: What is the flag after completing level 1?
     '
 ![apostrophe](images/9-apostrophe.png)<br/>
-Try typing an apostrophe `'` after the `id=1` and press enter. And you'll see this returns an SQL error informing you of an error in your syntax.
+Try typing an apostrophe `'` after the `id=1` and press enter. And you'll see this returns an SQL error informing you of an error in your syntax.<br/>
+
+    1 UNION SELECT 1,2,3
+![error solved](images/10-error-solved.png)<br/>
+Success,  the error message has gone, and the article is being displayed, but now  we want to display our data instead of the article.
