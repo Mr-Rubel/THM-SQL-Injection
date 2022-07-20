@@ -74,3 +74,10 @@ We get all the columns name of `stuff_users` table
 ![sqli in password](images/16-sqli-in-pwd.png)<br/>
 ![next button](images/17-click-next.png)<br/>
 #### A: `THM{SQL_INJECTION_9581}` :heavy_check_mark:<br/>
+
+
+## Task 7: Blind SQLi - Boolean Based
+### Q: What is the flag after completing level three?
+    admin123' UNION SELECT 1;-- 
+![incorrent column](images/18-incorrect-column.png)<br/>
+As the web application has responded with the value taken as false, we can confirm this is the incorrect value of columns.<br/>
