@@ -73,3 +73,4 @@ We get all the columns name of `stuff_users` table
     username anything and password field ' OR 1=1;--
 ![sqli in password](images/16-sqli-in-pwd.png)<br/>
 ![next button](images/17-click-next.png)<br/>
+#### A: `THM{SQL_INJECTION_9581}` :heavy_check_mark:<br/>
