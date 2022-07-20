@@ -7,4 +7,4 @@
 ## Task 1: Breif
 ### Q: What does SQL stand for?
 ![what does](images/2-what-does.png)<br/>
-#### A: `Structured Query Language`
+#### A: `Structured Query Language` :heavy_check_mark:
