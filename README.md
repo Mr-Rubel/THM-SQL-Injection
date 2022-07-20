@@ -50,3 +50,4 @@ Now change value `1` to `0` before UNION
 
     0 UNION SELECT 1,2,3
 ![change value](images/11-change-value.png)<br/>
+You'll now see the article is just made up of the result from the UNION select returning the column values `1, 2, and 3`
