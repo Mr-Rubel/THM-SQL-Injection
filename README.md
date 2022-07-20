@@ -47,5 +47,6 @@ Try typing an apostrophe `'` after the `id=1` and press enter. And you'll see th
 Success,  the error message has gone, and the article is being displayed, but now  we want to display our data instead of the article.<br/>
 
 Now change value `1` to `0` before UNION
+
     0 UNION SELECT 1,2,3
 ![change value](images/11-change-value.png)<br/>
