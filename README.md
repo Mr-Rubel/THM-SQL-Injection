@@ -33,5 +33,5 @@
 
 ## Task 4:
 ### Q: What character signifies the end of an SQL query?
-![apostophy](images/8-apostophy.png)<br/>
+![semicolon](images/8-semicolon.png)<br/>
 #### A: `;` :heavy_check_mark:<br/>
