@@ -30,3 +30,8 @@
 ### Q: What SQL statement is used to add data?
 ![insert](images/7-insert.png)<br/>
 #### A: `INSERT` :heavy_check_mark:<br/>
+
+## Task 4:
+### Q: What character signifies the end of an SQL query?
+![apostophy](images/8-apostophy.png)<br/>
+#### A: `;` :heavy_check_mark:<br/>
