@@ -9,7 +9,7 @@
 ![what does](images/2-what-does.png)<br/>
 #### A: `Structured Query Language` :heavy_check_mark:<br/>
 
-## Task 2:
+## Task 2: What is database?
 ### Q: What is the acronym for the software that controls a database?
 ![dbms](images/3.png)<br/>
 #### A: `DBMS` :heavy_check_mark:<br/>
@@ -18,7 +18,7 @@
 ![table](images/4-table.png)<br/>
 #### A: `table` :heavy_check_mark:<br/>
 
-## Task 3:
+## Task 3: What is SQL?
 ### Q: What SQL statement is used to retrieve data?
 ![select](images/5-select.png)<br/>
 #### A: `SELECT` :heavy_check_mark:<br/>
@@ -31,7 +31,13 @@
 ![insert](images/7-insert.png)<br/>
 #### A: `INSERT` :heavy_check_mark:<br/>
 
-## Task 4:
+## Task 4: What is SQL Injection?
 ### Q: What character signifies the end of an SQL query?
 ![semicolon](images/8-semicolon.png)<br/>
 #### A: `;` :heavy_check_mark:<br/>
+
+## Task 5: In-Band SQLi
+### Q: What is the flag after completing level 1?
+    '
+![apostrophe](images/9-apostrophe.png)<br/>
+Try typing an apostrophe `'` after the `id=1` and press enter. And you'll see this returns an SQL error informing you of an error in your syntax.
