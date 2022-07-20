@@ -5,5 +5,6 @@
 
 
 ## Task 1: Breif
-### What does SQL stand for?
-![what does](images/2-what-does.png)
+### Q: What does SQL stand for?
+![what does](images/2-what-does.png)<br/>
+A: `Structured Query Language`
